@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Sign Up Form
+        </title>
+        <style>
+            table{
+                line-height: 2.0;
+                background-color: black;
+                color: yellow;
+            
+            }
+            .lastrow
+            {
+                background-color: orange;
+                border-color: orange;
+                
+            }
+            #s
+            {
+                background-color: green;
+                color: white;
+                border-radius: 5px;
+                border-color: green;
+            }
+             #c
+            {
+                background-color:red;
+                color: white;
+                border-radius: 5px;
+                border-color:red;
+            }
+       
+        </style>
+    </head>
+    <body>
+        <h1>Sign Up Form</h1>
+        <form name="myform" id="myform">
+        <table>
+            <tr>
+                <th><label for="fname">First Name</label></th>
+                <td><input type="text" id="fname"></td>
+            </tr>
+            <tr>
+                <th><label for="lname">Last Name</label></th>
+                <td><input type="text" id="lname"></td>
+            </tr>
+            <tr>
+                <th><label for="dob">Date of Birth</label></th>
+                <td><input type="date" id="dob"></td>
+            </tr>
+            <tr>
+                <th><label for="gender">Gender</label></th>
+                <td><input type="radio" value="Male" id="gender">Male
+                    <input type="radio" value="female" id="gender">Female</td>
+            </tr>
+            <tr>
+                <th><label for="country">Country</label></th>
+                <td>
+                <select name="country" id="country">
+                    <option name="India" value="India">India</option>
+                    <option name="Japan" value="Japan">Japan</option>
+                    <option name="Indonesia" value="Indonesia">Indonesia</option>
+                </select>
+                </td>
+            </tr>
+             <tr>
+                <th><label for="email">Email</label></th>
+                <td><input type="email" id="email"></td>
+            </tr>
+             <tr>
+                <th><label for="phone">Phone</label></th>
+                <td><input type="tel" id="phone"></td>
+            </tr>
+             <tr>
+                <th><label for="pass">Password</label></th>
+                <td><input type="password" id="pass"></td>
+            </tr>
+             <tr>
+                <th><label for="cpass">Confirm Password</label></th>
+                <td><input type="password" id="cpass"></td>
+            </tr>
+            <tr>
+                <th></th>
+                <td>
+                    <input type="checkbox" id="agree">
+                    <label for="agree">I Agree to terms and conditions</label>
+                </td>
+            </tr>
+            <tr class="lastrow">
+                <th></th>          
+                <td>
+                    <button type="submit" form ="myform" id="s">SUBMIT</button>
+                    <button type="button" form="myform" id="c">CANCEL</button>
+                </td>
+            </tr>
+
+        </table>
+        </form>
+    </body>
+</html>
